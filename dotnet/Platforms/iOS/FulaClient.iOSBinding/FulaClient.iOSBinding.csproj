@@ -5,6 +5,12 @@
     <ImplicitUsings>true</ImplicitUsings>
     <IsBindingProject>true</IsBindingProject>
   </PropertyGroup>
+  
+
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="cp -R $(OutDir) ../FulaClient.iOSSdk/iOSBinding"></Exec>
+  </Target>
 
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinition.cs" />

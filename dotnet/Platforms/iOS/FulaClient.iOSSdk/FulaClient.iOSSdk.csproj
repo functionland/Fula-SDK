@@ -16,4 +16,9 @@
 	  <ProjectReference Include="..\..\..\Core\FulaClient.Core.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Reference Include="FulaClient.iOSBinding">
+	    <HintPath>iOSBinding\FulaClient.iOSBinding.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
 </Project>
