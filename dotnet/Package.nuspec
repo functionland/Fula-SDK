@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Fula.Sdk</id>
+    <version>0.0.1</version>
+    <authors>Functionland</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://github.com/functionland/</projectUrl>
+    <description>Fula sdk</description>
+    <releaseNotes>init</releaseNotes>
+    <copyright>$copyright$</copyright>
+   <dependencies>
+      <!-- <group targetFramework=".NETCoreApp6.0">
+        <dependency id="System.Runtime.InteropServices.NFloat.Internal" version="6.0.1" />
+      </group> -->
+      <group targetFramework="net6.0-android30.0">
+      </group>
+       <group targetFramework="net6.0-windows10.0.19041">
+      </group>
+      <group targetFramework="net6.0-ios15.4">
+        <dependency id="System.Runtime.InteropServices.NFloat.Internal" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+    <files>
+    <file src="README.md" target="" />
+    
+    <file src="Platforms/Android/FulaClient.AndroidSdk/bin/Release/net6.0-android/FulaClient.AndroidBinding.dll" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/FulaClient.AndroidSdk/bin/Release/net6.0-android/FulaClient.AndroidBinding.xml" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/FulaClient.AndroidSdk/bin/Release/net6.0-android/FulaClient.AndroidSdk.dll" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/FulaClient.AndroidSdk/bin/Release/net6.0-android/FulaClient.AndroidSdk.xml" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/FulaClient.AndroidSdk/bin/Release/net6.0-android/FulaClient.Core.dll" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/FulaClient.AndroidSdk/bin/Release/net6.0-android/mobile.aar" target="lib/net6.0-android30.0/" />
+
+    <file src="Platforms/Windows/FulaClient.WindowsSdk/bin/Release/net6.0-windows10.0.19041.0/FulaClient.Core.dll" target="lib/net6.0-windows10.0.19041/" />
+    <file src="Platforms/Windows/FulaClient.WindowsSdk/bin/Release/net6.0-windows10.0.19041.0/FulaClient.WindowsSdk.dll" target="lib/net6.0-windows10.0.19041/" />
+
+    <file src="Platforms/iOS/FulaClient.iOSSdk/bin/Release/net6.0-ios/FulaClient.Core.dll" target="lib/net6.0-ios15.4" />
+    <file src="Platforms/iOS/FulaClient.iOSSdk/bin/Release/net6.0-ios/FulaClient.iOSSdk.dll" target="lib/net6.0-ios15.4" />
+
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.dll" target="lib/net6.0-ios15.4" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/manifest" target="/lib/net6.0-ios15.4/FulaClient.iOSBinding.resources" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/Info.plist" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework" />
+
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Headers" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Mobile" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Modules" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Resources" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/Current" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/Current" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Mobile" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Mobile" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Headers/Mobile.h" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Headers" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Headers/Mobile.objc.h" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Headers" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Headers/ref.h" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Headers" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Headers/Universe.objc.h" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Headers" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Modules/module.modulemap" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Modules" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Resources/Info.plist" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64/Mobile.framework/Versions/A/Resources" />
+
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Headers" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Mobile" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Modules" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Resources" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework" /> 
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/Current" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/Current" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Mobile" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Mobile" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Headers/Mobile.h" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Headers" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Headers/Mobile.objc.h" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Headers" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Headers/ref.h" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Headers" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Headers/Universe.objc.h" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Headers" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Modules/module.modulemap" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Modules" />
+    <file src="Platforms/iOS/FulaClient.iOSBinding/bin/Release/net6.0-ios/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator/Mobile.framework/Versions/A/Resources/Info.plist" target="lib/net6.0-ios15.4/FulaClient.iOSBinding.resources/Mobile.xcframework/ios-arm64_x86_64-simulator" />
+
+
+  </files>
+</package>
