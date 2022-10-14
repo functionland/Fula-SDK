@@ -232,4 +232,6 @@ _book
 *.tsbuildinfo
 
 dotnet/Platforms/iOS/iOSBinding/
+dotnet/Platforms/Android/AndroidBinding/
+dotnet/Platforms/Windows/WindowsBinding/
 dotnet/Platforms/iOS/FulaClient.iOSBinding/Mobile.xcframework/

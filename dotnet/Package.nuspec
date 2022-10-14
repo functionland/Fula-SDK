@@ -27,10 +27,18 @@
     <files>
     <file src="README.md" target="" />
     
+    <file src="Platforms/Android/AndroidBinding/FulaClient.AndroidBinding.dll" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/AndroidBinding/FulaClient.AndroidBinding.xml" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/AndroidBinding/FulaClient.Android.dll" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/AndroidBinding/FulaClient.Android.xml" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/AndroidBinding/FulaClient.Core.dll" target="lib/net6.0-android30.0/" />
+    <file src="Platforms/Android/AndroidBinding/mobile.aar" target="lib/net6.0-android30.0/" />
+
+    <file src="Platforms/Windows/WindowsBinding/FulaClient.Core.dll" target="lib/net6.0-windows10.0.19041/" />
+    <file src="Platforms/Windows/WindowsBinding/FulaClient.Windows.dll" target="lib/net6.0-windows10.0.19041/" />
    
     <file src="Platforms/iOS/iOSBinding/FulaClient.Core.dll" target="lib/net6.0-ios16.0" />
     <file src="Platforms/iOS/iOSBinding/FulaClient.iOS.dll" target="lib/net6.0-ios16.0" />
-
     <file src="Platforms/iOS/iOSBinding/FulaClient.iOSBinding.dll" target="lib/net6.0-ios16.0" />
     <file src="Platforms/iOS/iOSBinding/FulaClient.iOSBinding.resources.zip" target="/lib/net6.0-ios16.0" />
    

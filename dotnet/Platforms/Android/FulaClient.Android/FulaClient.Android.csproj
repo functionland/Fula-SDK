@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net6.0-android</TargetFrameworks>
@@ -15,5 +15,9 @@
 	  <ProjectReference Include="..\..\..\Core\FulaClient.Core.csproj" />
 	  <ProjectReference Include="..\FulaClient.AndroidBinding\FulaClient.AndroidBinding.csproj" />
 	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy $(OutDir) ..\AndroidBinding /I /Y"></Exec>
+	</Target>
 
 </Project>

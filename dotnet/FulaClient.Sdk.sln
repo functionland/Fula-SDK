@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{00D3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FulaClient.iOSBinding", "Platforms\iOS\FulaClient.iOSBinding\FulaClient.iOSBinding.csproj", "{3E3497F5-36F8-467F-A0E1-9F9A72E0A88C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FulaClient.WindowsSdk", "Platforms\Windows\FulaClient.WindowsSdk\FulaClient.WindowsSdk.csproj", "{5C4C936D-23E7-4075-B85F-81172EA97E07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FulaClient.Windows", "Platforms\Windows\FulaClient.WindowsSdk\FulaClient.Windows.csproj", "{5C4C936D-23E7-4075-B85F-81172EA97E07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FulaClient.Core", "Core\FulaClient.Core.csproj", "{42D6678F-4B80-42FA-B892-010DE4A84FC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FulaClient.Core", "Core\FulaClient.Core.csproj", "{42D6678F-4B80-42FA-B892-010DE4A84FC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FulaClient.iOS", "Platforms\iOS\FulaClient.iOS\FulaClient.iOS.csproj", "{C0ADEA64-3E2C-403F-A75B-8812D10131CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FulaClient.iOS", "Platforms\iOS\FulaClient.iOS\FulaClient.iOS.csproj", "{C0ADEA64-3E2C-403F-A75B-8812D10131CA}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "FulaClient.AndroidBinding", "Platforms\Android\FulaClient.AndroidBinding\FulaClient.AndroidBinding.csproj", "{04DAC05A-C439-41C3-ACCC-7FA06A809ABF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FulaClient.AndroidBinding", "Platforms\Android\FulaClient.AndroidBinding\FulaClient.AndroidBinding.csproj", "{04DAC05A-C439-41C3-ACCC-7FA06A809ABF}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "FulaClient.AndroidSdk", "Platforms\Android\FulaClient.AndroidSdk\FulaClient.AndroidSdk.csproj", "{C8A4A5F8-8A0E-4604-9337-C9E5DE5ADDEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FulaClient.Android", "Platforms\Android\FulaClient.Android\FulaClient.Android.csproj", "{690A757D-1F87-489F-A3C6-DD461FFA6472}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{04DAC05A-C439-41C3-ACCC-7FA06A809ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04DAC05A-C439-41C3-ACCC-7FA06A809ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04DAC05A-C439-41C3-ACCC-7FA06A809ABF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8A4A5F8-8A0E-4604-9337-C9E5DE5ADDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8A4A5F8-8A0E-4604-9337-C9E5DE5ADDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8A4A5F8-8A0E-4604-9337-C9E5DE5ADDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8A4A5F8-8A0E-4604-9337-C9E5DE5ADDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{690A757D-1F87-489F-A3C6-DD461FFA6472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690A757D-1F87-489F-A3C6-DD461FFA6472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690A757D-1F87-489F-A3C6-DD461FFA6472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690A757D-1F87-489F-A3C6-DD461FFA6472}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,7 +60,7 @@ Global
 		{5C4C936D-23E7-4075-B85F-81172EA97E07} = {00D3DD43-5DEF-4EF6-8E84-EBB2B16576B2}
 		{C0ADEA64-3E2C-403F-A75B-8812D10131CA} = {B1F1E979-5050-4B9F-AEFF-6402E3C202DF}
 		{04DAC05A-C439-41C3-ACCC-7FA06A809ABF} = {92E1EFBF-60F0-4A48-952D-1FF37753028F}
-		{C8A4A5F8-8A0E-4604-9337-C9E5DE5ADDEB} = {92E1EFBF-60F0-4A48-952D-1FF37753028F}
+		{690A757D-1F87-489F-A3C6-DD461FFA6472} = {92E1EFBF-60F0-4A48-952D-1FF37753028F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {135C61BC-F8B4-46C6-8046-EDFE6680C4C2}
