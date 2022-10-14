@@ -2,6 +2,6 @@
 {
     public interface IFulaClient
     {
-
+        void CreateBox(string name);
     }
 }

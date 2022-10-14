@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks>net6.0-ios</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
 		<UseMaui>true</UseMaui>
@@ -10,6 +10,7 @@
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<AssemblyName>FulaClient.iOS</AssemblyName>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -17,8 +18,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="FulaClient.iOSBinding" />
+	</ItemGroup>
+	<ItemGroup>
 	  <Reference Include="FulaClient.iOSBinding">
-	    <HintPath>iOSBinding\FulaClient.iOSBinding.dll</HintPath>
+	    <HintPath>..\iOSBinding\FulaClient.iOSBinding.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="cp -R $(OutDir) ../iOSBinding"></Exec>
+	</Target>
+
+	
 </Project>

@@ -2,7 +2,7 @@ using ObjCRuntime;
 using Foundation;
 using UIKit;
 
-namespace FulaClient.iOSSdk
+namespace FulaClient.iOSBinding
 {
    
 

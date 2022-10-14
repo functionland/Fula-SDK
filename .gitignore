@@ -231,5 +231,5 @@ _book
 *Resource.designer.cs
 *.tsbuildinfo
 
-dotnet/Platforms/iOS/FulaClient.iOSSdk/iOSBinding/
+dotnet/Platforms/iOS/iOSBinding/
 dotnet/Platforms/iOS/FulaClient.iOSBinding/Mobile.xcframework/
